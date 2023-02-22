@@ -16,29 +16,14 @@
       "id": 3
     },
     {
-      "userid": "12414124",
-      "name": "哈哈",
-      "age": "3434",
-      "sex": "哈哈哈",
-      "tel": "325364646",
-      "vaccination": "",
-      "id": 6
+      "username": "abb",
+      "password": "a123456",
+      "id": 4
     },
     {
-      "username": "ddfdf",
-      "password": "jzq",
-      "userid": "3454",
-      "admin": "true",
-      "id": 7
-    },
-    {
-      "userid": "124124",
-      "name": "哈哈哈哈",
-      "age": "124",
-      "sex": "信息",
-      "tel": "12555",
-      "vaccination": "信息",
-      "id": 8
+      "username": "abbb",
+      "password": "a123456",
+      "id": 5
     }
   ],
   "userinfo": [
@@ -47,7 +32,7 @@
       "userid": 1,
       "name": "张三",
       "sex": "女",
-      "age": "23",
+      "age": "22",
       "tel": "15241799487",
       "vaccination": "北京科兴三针"
     },
@@ -70,40 +55,22 @@
       "vaccination": "无"
     },
     {
-      "userid": "4",
+      "userid": 4,
       "name": "哇哈哈",
-      "age": "28",
-      "sex": "男",
-      "tel": "15523355467",
-      "vaccination": "自己打自己一针",
+      "age": "45",
+      "sex": "女",
+      "tel": "123412424",
+      "vaccination": "大逼斗",
       "id": 4
     },
     {
-      "userid": "5",
-      "name": "嘻嘻嘻",
-      "age": "3434",
-      "sex": "分隔符",
-      "tel": "342423",
-      "vaccination": "公共",
+      "userid": 5,
+      "name": "ukhkjhj",
+      "age": "576",
+      "sex": "jgjjgkk",
+      "tel": "677878",
+      "vaccination": "ilyhilih",
       "id": 5
-    },
-    {
-      "userid": "6",
-      "name": "呼呼呼",
-      "age": "56",
-      "sex": "男",
-      "tel": "12444355546",
-      "vaccination": "打咩",
-      "id": 6
-    },
-    {
-      "userid": "7",
-      "name": "呼呼发",
-      "age": "23",
-      "sex": "女",
-      "tel": "3435435545",
-      "vaccination": "大大大",
-      "id": 7
     }
   ],
   "healthdata": [

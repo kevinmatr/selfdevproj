@@ -83,7 +83,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
     console.log(value, "验证结果");
     if (value) {
       axios({
-        url: "http://192.168.20.170:3000/user",
+        url: "http://192.168.20.25:3000/user",
         method: "get",
         params: ruleForm.value,
       }).then((res) => {

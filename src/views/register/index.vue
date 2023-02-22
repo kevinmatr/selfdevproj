@@ -98,7 +98,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
     console.log(value, "验证结果");
     if (value) {
       axios({
-        url: "http://192.168.20.170:3000/user",
+        url: "http://192.168.20.25:3000/user",
         method: "get",
         params: {
           username: ruleForm.value.username,
@@ -109,7 +109,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
           alert("用户名已被注册");
         } else {
           axios({
-            url: "http://192.168.20.170:3000/user",
+            url: "http://192.168.20.25:3000/user",
             method: "post",
             data: {
               username: ruleForm.value.username,
