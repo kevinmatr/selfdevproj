@@ -1,0 +1,394 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "username": "15241799487",
+      "password": "admin123456"
+    },
+    {
+      "id": 2,
+      "username": "15241799486",
+      "password": "admin123456"
+    },
+    {
+      "username": "15241799488",
+      "password": "admin123456",
+      "id": 3
+    },
+    {
+      "userid": "12414124",
+      "name": "哈哈",
+      "age": "3434",
+      "sex": "哈哈哈",
+      "tel": "325364646",
+      "vaccination": "",
+      "id": 6
+    },
+    {
+      "username": "ddfdf",
+      "password": "jzq",
+      "userid": "3454",
+      "admin": "true",
+      "id": 7
+    },
+    {
+      "userid": "124124",
+      "name": "哈哈哈哈",
+      "age": "124",
+      "sex": "信息",
+      "tel": "12555",
+      "vaccination": "信息",
+      "id": 8
+    }
+  ],
+  "userinfo": [
+    {
+      "id": 1,
+      "userid": 1,
+      "name": "张三",
+      "sex": "女",
+      "age": "23",
+      "tel": "15241799487",
+      "vaccination": "北京科兴三针"
+    },
+    {
+      "id": 2,
+      "userid": 2,
+      "name": "李四",
+      "sex": "男",
+      "age": "25",
+      "tel": "15241799486",
+      "vaccination": "长春生物一针"
+    },
+    {
+      "id": 3,
+      "userid": 3,
+      "name": "王五",
+      "sex": "女",
+      "age": "20",
+      "tel": "15241799488",
+      "vaccination": "无"
+    },
+    {
+      "userid": "4",
+      "name": "哇哈哈",
+      "age": "28",
+      "sex": "男",
+      "tel": "15523355467",
+      "vaccination": "自己打自己一针",
+      "id": 4
+    },
+    {
+      "userid": "5",
+      "name": "嘻嘻嘻",
+      "age": "3434",
+      "sex": "分隔符",
+      "tel": "342423",
+      "vaccination": "公共",
+      "id": 5
+    },
+    {
+      "userid": "6",
+      "name": "呼呼呼",
+      "age": "56",
+      "sex": "男",
+      "tel": "12444355546",
+      "vaccination": "打咩",
+      "id": 6
+    },
+    {
+      "userid": "7",
+      "name": "呼呼发",
+      "age": "23",
+      "sex": "女",
+      "tel": "3435435545",
+      "vaccination": "大大大",
+      "id": 7
+    }
+  ],
+  "healthdata": [
+    {
+      "userid": 1,
+      "id": 1,
+      "time": "2023-2-10",
+      "journey": "在家",
+      "symptom": "低烧",
+      "temperature": "37.5"
+    },
+    {
+      "userid": 1,
+      "id": 2,
+      "time": "2023-2-11",
+      "journey": "在家",
+      "symptom": "恶心,头晕,高烧",
+      "temperature": "39"
+    },
+    {
+      "userid": 1,
+      "id": 3,
+      "time": "2023-2-12",
+      "journey": "在家",
+      "symptom": "恶心,头晕,高烧",
+      "temperature": "39.5"
+    },
+    {
+      "userid": 1,
+      "id": 4,
+      "time": "2023-2-13",
+      "journey": "在家",
+      "symptom": "发冷,无力",
+      "temperature": "38"
+    },
+    {
+      "userid": 1,
+      "id": 5,
+      "time": "2023-2-14",
+      "journey": "在家",
+      "symptom": "低烧",
+      "temperature": "37"
+    },
+    {
+      "userid": 1,
+      "id": 6,
+      "time": "2023-2-15",
+      "journey": "外出步行到国大药房买药",
+      "symptom": "低烧",
+      "temperature": "37"
+    },
+    {
+      "userid": 1,
+      "id": 7,
+      "time": "2023-2-16",
+      "journey": "在家",
+      "symptom": "良好",
+      "temperature": "36.3"
+    },
+    {
+      "userid": 1,
+      "id": 8,
+      "time": "2023-2-17",
+      "journey": "上班",
+      "symptom": "良好",
+      "temperature": "36.2"
+    },
+    {
+      "userid": 2,
+      "id": 9,
+      "time": "2023-2-20",
+      "journey": "上班",
+      "symptom": "良好",
+      "temperature": "36.2"
+    },
+    {
+      "userid": 2,
+      "id": 10,
+      "time": "2023-2-21",
+      "journey": "上班",
+      "symptom": "良好",
+      "temperature": "36.5"
+    }
+  ],
+  "vaccinedata": [
+    {
+      "id": 1,
+      "vaname": "北京科兴",
+      "number": 300
+    },
+    {
+      "id": 2,
+      "vaname": "长春生物",
+      "number": 500
+    }
+  ],
+  "vaccinemes": [
+    {
+      "userid": 1,
+      "id": 1,
+      "vaname": "北京科兴",
+      "time": "2020-1-12",
+      "type": "第一针",
+      "place": "沈阳市浑南区金水湾小区卫生所",
+      "tel": "15241799487"
+    },
+    {
+      "userid": 1,
+      "id": 2,
+      "vaname": "北京科兴",
+      "time": "2020-2-30",
+      "type": "第二针",
+      "place": "沈阳市浑南区金水湾小区卫生所",
+      "tel": "15241799487"
+    },
+    {
+      "userid": 1,
+      "id": 3,
+      "vaname": "北京科兴",
+      "time": "2020-5-10",
+      "type": "第三针",
+      "place": "沈阳市浑南区金水湾小区卫生所",
+      "tel": "15241799487"
+    },
+    {
+      "userid": 2,
+      "id": 4,
+      "vaname": "长春生物",
+      "time": "2020-1-13",
+      "type": "第一针",
+      "place": "沈阳市盛京医院",
+      "tel": "15241799486"
+    },
+    {
+      "userid": 3,
+      "id": 5,
+      "vaname": "长春生物",
+      "time": "2020-1-13",
+      "type": "第一针",
+      "place": "沈阳市盛京医院",
+      "tel": "15241799488"
+    }
+  ],
+  "goodsdata": [
+    {
+      "id": 1,
+      "goodsname": "套餐一",
+      "supplier": "新天地超市(奥体店)",
+      "number": 300
+    },
+    {
+      "id": 2,
+      "goodsname": "套餐二",
+      "supplier": "万达(奥体店)",
+      "number": 2143
+    },
+    {
+      "id": 3,
+      "goodsname": "套餐三",
+      "supplier": "新天地超市(长白店)",
+      "number": 541
+    },
+    {
+      "id": 4,
+      "goodsname": "套餐四",
+      "supplier": "万豪酒店",
+      "number": 1548
+    }
+  ],
+  "goodsapply": [
+    {
+      "userid": 1,
+      "id": 1,
+      "goodsname": "套餐二",
+      "date": "2020-5-20",
+      "applynum": 1
+    },
+    {
+      "userid": 1,
+      "id": 2,
+      "goodsname": "套餐四",
+      "date": "2020-5-25",
+      "applynum": 1
+    },
+    {
+      "userid": 2,
+      "id": 3,
+      "goodsname": "套餐二",
+      "date": "2020-10-25",
+      "applynum": 1
+    },
+    {
+      "userid": 3,
+      "id": 4,
+      "goodsname": "套餐四",
+      "date": "2020-10-25",
+      "applynum": 1
+    }
+  ],
+  "epidemic": [
+    {
+      "id": 1,
+      "place": "北京市",
+      "infect": 1000,
+      "cure": 10000000
+    },
+    {
+      "id": 2,
+      "place": "上海市",
+      "infect": 2135,
+      "cure": 436456
+    },
+    {
+      "id": 3,
+      "place": "广州市",
+      "infect": 867,
+      "cure": 624345
+    },
+    {
+      "id": 4,
+      "place": "深圳市",
+      "infect": 237,
+      "cure": 67655
+    },
+    {
+      "id": 5,
+      "place": "杭州市",
+      "infect": 121,
+      "cure": 43234
+    },
+    {
+      "id": 6,
+      "place": "沈阳市",
+      "infect": 97,
+      "cure": 6703
+    },
+    {
+      "id": 7,
+      "place": "大连市",
+      "infect": 366,
+      "cure": 23435
+    },
+    {
+      "id": 8,
+      "place": "抚顺市",
+      "infect": 10,
+      "cure": 456
+    },
+    {
+      "id": 9,
+      "place": "鞍山市",
+      "infect": 4,
+      "cure": 345
+    },
+    {
+      "id": 10,
+      "place": "成都市",
+      "infect": 157,
+      "cure": 32434
+    }
+  ],
+  "feedback": [
+    {
+      "id": 1,
+      "userid": 1,
+      "date": "2020-10-25",
+      "content": "疫苗预约效率很高,物资里的菜和水果很新鲜,就是量有点少"
+    },
+    {
+      "id": 2,
+      "userid": 1,
+      "date": "2020-11-1",
+      "content": "核酸点人太多，要排好久"
+    },
+    {
+      "id": 3,
+      "userid": 2,
+      "date": "2020-6-25",
+      "content": "疫苗预约还要排队，效率能不能点啊"
+    },
+    {
+      "id": 4,
+      "userid": 3,
+      "date": "2021-3-25",
+      "content": "服务人员态度很好，辛苦你们了"
+    }
+  ]
+}

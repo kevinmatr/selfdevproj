@@ -1,0 +1,266 @@
+"server":"json-server ./data/db.json --host ip地址 --watch"（package.json设置启动json-server）
+json-server 操作 get查询，post新增，patch更改，delete删除，
+！！！所有接口有返回值就是操作成功
+
+已有账号
+
+username：15241799487
+password：admin123456
+
+
+"username": "15241799486"
+"password": "admin123456"
+
+
+"username": "15241799488"
+"password": "admin123456"
+
+登录
+http://192.168.20.216:3000/user
+get
+参数：
+username：string；
+password：string；
+
+//新建用户（！！！必须！！！需要新增自己的个人信息）
+注册
+http://192.168.20.216:3000/user
+post
+参数：
+username：string；
+password：string；
+
+
+个人中心：
+获取个人信息
+http://192.168.20.216:3000/userinfo
+get
+参数：
+id：number//用户id
+
+修改个人信息
+http://192.168.20.216:3000/userinfo/加(id)    //需要在地址上添加模板字符串${用户id}
+patch
+参数：
+需要修改的属性
+例：
+sex：string
+
+
+（新注册用户）
+http://192.168.20.216:3000/userinfo
+post
+参数：
+userid：number//用户id
+name：string；//姓名
+sex：string；//性别
+age：string；//年龄
+tel：string；//手机号
+vaccination：string；//疫苗接种情况
+
+健康上报管理
+获取本人打卡信息
+http://192.168.20.216:3000/healthdata
+get
+参数：
+userid：number//用户id
+
+
+添加打卡信息
+http://192.168.20.216:3000/healthdata
+post
+参数：
+"userid": nunber//用户id
+"time": string；//打卡时间
+"journey": string//行程
+"symptom": string//症状
+"temperature": string//体温
+
+获取个人疫苗接种信息
+http://192.168.20.216:3000/vaccinemes
+get
+参数：
+userid：number//用户id
+
+例：
+"userid": 1,//用户id
+"vaname": "北京科兴",//疫苗名称
+"time": "2020-1-12",//预约时间
+"type": "第一针",
+"place": "沈阳市浑南区金水湾小区卫生所",//接种地点
+"tel": "15241799487"//手机号
+
+疫情管理
+获取疫苗种类
+http://192.168.20.216:3000/healthdata
+get
+参数：无
+获取例:
+[
+    {
+        "id": 1,//疫苗id
+        "vaname": "北京科兴",//疫苗名称
+        "number": 300//剩余数量
+    },
+    {
+        "id": 2,
+        "vaname": "长春生物",
+        "number": 500
+    }
+]
+
+疫苗预约
+http://192.168.20.216:3000/vaccinemes
+post
+参数：
+"userid": 1,//用户id
+"vaname": "北京科兴",//疫苗名称
+"time": "2020-1-12",//预约时间
+"type": "第一针",
+"place": "沈阳市浑南区金水湾小区卫生所",//接种地点
+"tel": "15241799487"//手机号
+（预约提交成功，信息显示在个人疫苗接种信息里面，但是预约的前端可以根据时间大于现在时间在表格上标注预约作为区分）
+
+
+获取各地疫情信息
+http://192.168.20.216:3000/epidemic
+get
+参数：无
+获取信息例：
+[
+    {
+        "id": 1,
+        "place": "北京市",//城市名称
+        "infect": 1000,//感染人数
+        "cure": 10000000//治愈人数
+    },
+    {
+        "id": 2,
+        "place": "上海市",
+        "infect": 2135,
+        "cure": 436456
+    },
+    {
+        "id": 3,
+        "place": "广州市",
+        "infect": 867,
+        "cure": 624345
+    },
+    {
+        "id": 4,
+        "place": "深圳市",
+        "infect": 237,
+        "cure": 67655
+    },
+    {
+        "id": 5,
+        "place": "杭州市",
+        "infect": 121,
+        "cure": 43234
+    },
+    {
+        "id": 6,
+        "place": "沈阳市",
+        "infect": 97,
+        "cure": 6703
+    },
+    {
+        "id": 7,
+        "place": "大连市",
+        "infect": 366,
+        "cure": 23435
+    },
+    {
+        "id": 8,
+        "place": "抚顺市",
+        "infect": 10,
+        "cure": 456
+    },
+    {
+        "id": 9,
+        "place": "鞍山市",
+        "infect": 4,
+        "cure": 345
+    },
+    {
+        "id": 10,
+        "place": "成都市",
+        "infect": 157,
+        "cure": 32434
+    }
+]
+
+
+物资申请
+获取个人物资申请信息
+http://192.168.20.216:3000/goodsapply
+get
+参数：
+userid：number//用户id
+例：
+{
+      "userid": 1,//用户id
+      "id": 1,
+      "goodsname": "套餐二",//物资名称
+      "date": "2020-5-20",//申请时间
+      "applynum": 1//申请数量
+    },
+
+
+
+获取物资列表
+http://192.168.20.216:3000/goodsdata
+get
+参数：无
+例：
+[
+    {
+        "id": 1,
+        "goodsname": "套餐一",//物资名称
+        "supplier": "新天地超市(奥体店)",//供应商
+        "number": 300//剩余数量
+    },
+    {
+        "id": 2,
+        "goodsname": "套餐二",
+        "supplier": "万达(奥体店)",
+        "number": 2143
+    },
+    {
+        "id": 3,
+        "goodsname": "套餐三",
+        "supplier": "新天地超市(长白店)",
+        "number": 541
+    },
+    {
+        "id": 4,
+        "goodsname": "套餐四",
+        "supplier": "万豪酒店",
+        "number": 1548
+    }
+]
+
+申请物资
+http://192.168.20.216:3000/goodsapply
+post
+参数：
+"userid": 1,//用户id
+"goodsname": "套餐二",//物资名称
+"date": "2020-5-20",//申请时间
+"applynum": 1//申请数量
+
+用户反馈
+获取用户本人反馈信息
+http://192.168.20.216:3000/feedback
+get
+参数：
+userid：number//用户id
+
+新增用户反馈
+http://192.168.20.216:3000/feedback
+post
+参数：
+"userid": 1,//用户id
+"date": "2020-10-25"//发表日期
+"content": "疫苗预约效率很高,物资里的菜和水果很新鲜,就是量有点少"//发表内容
+
